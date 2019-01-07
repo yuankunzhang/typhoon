@@ -85,6 +85,11 @@ variable "worker_clc_snippets" {
 
 # configuration
 
+variable "ssh_private_key" {
+  type        = "string"
+  description = "SSH private key for connnecting as user 'core'"
+}
+
 variable "ssh_authorized_key" {
   type        = "string"
   description = "SSH public key for user 'core'"
